@@ -1,5 +1,5 @@
 {
-    "name": "IVLab.Template.Editor",
+    "name": "IVLab.MinVR3.XRIToolkit.Editor",
     "rootNamespace": "",
     "references": [
         "IVLab.Template.Runtime"

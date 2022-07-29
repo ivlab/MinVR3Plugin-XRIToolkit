@@ -1,11 +1,7 @@
 {
-    "name": "IVLab.Template.Samples",
-    "rootNamespace": "",
-    "references": [
-        "IVLab.Template.Runtime",
-    ],
+    "name": "IVLab.MinVR3.XRIToolkit.Runtime",
+    "references": [],
     "includePlatforms": [],
-    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
