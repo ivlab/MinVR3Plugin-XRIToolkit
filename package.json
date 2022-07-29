@@ -11,9 +11,9 @@
     "hideInEditor": "false",
     "samples": [
         {
-            "displayName": "MinVR3-XRIToolkit Sample",
-            "description": "Demonstrates using the package in a 3D scene.",
-            "path": "Samples~/Sample1"
+            "displayName": "MinVR3 with Unity XR Interaction Toolkit",
+            "description": "Two menus are displayed in the same scene, one created with MinVR3, the other with a Unity Canvas.  Shows how to combine MinVR interfaces with interfaces from Unity's XR Interaction Toolkit, which include support for interacting with Unity Canvases with XR Controllers.",
+            "path": "Samples~/TwoMenus"
         }
     ]
 }

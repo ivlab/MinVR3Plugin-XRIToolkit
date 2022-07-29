@@ -2,7 +2,10 @@
     "name": "IVLab.MinVR3.XRIToolkit.Editor",
     "rootNamespace": "",
     "references": [
-        "IVLab.Template.Runtime"
+        "IVLab.MinVR3.XRIToolkit.Runtime",
+        "IVLab.MinVR3.Runtime",
+        "IVLab.MinVR3.Editor",
+        "Unity.XR.Interaction.Toolkit"
     ],
     "includePlatforms": [
         "Editor"
