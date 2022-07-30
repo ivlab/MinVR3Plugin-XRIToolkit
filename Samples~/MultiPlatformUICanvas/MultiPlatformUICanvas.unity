@@ -312,7 +312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &146891701
 Transform:
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &322600456
 Transform:
   m_ObjectHideFlags: 0
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82de053acb7374c90ad9c91f2e1eb7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartupVRConfig: {fileID: 146891702}
+  m_StartupVRConfig: {fileID: 322600457}
   m_DefaultConfigFiles:
   - {fileID: 4900000, guid: ffddebff2c3fb4ade91e33709fb42858, type: 3}
 --- !u!4 &516808816
@@ -1710,7 +1710,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1519040793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fde8c84be71e644608e08eeda2832f1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 49c6d6fd11d1740c8aa01564b73ba35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1625074622
@@ -1776,7 +1776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1661282067
 Transform:
   m_ObjectHideFlags: 0
