@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731689, g: 0.13414702, b: 0.1210784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -312,7 +312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &146891701
 Transform:
   m_ObjectHideFlags: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ConfigFiles:
-  - {fileID: 4900000, guid: c1e0346fd1e734861aed75465ac79727, type: 3}
+  - {fileID: 4900000, guid: 18d7983f72ca54dc09d2c2f3886a6fe8, type: 3}
 --- !u!1 &170460152
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &322600456
 Transform:
   m_ObjectHideFlags: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ConfigFiles:
-  - {fileID: 4900000, guid: 8153eb35a924341638311d75db282719, type: 3}
+  - {fileID: 4900000, guid: 77a0c2cfcc79246afac54cb35406f835, type: 3}
 --- !u!1 &413364113
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,9 +883,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82de053acb7374c90ad9c91f2e1eb7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartupVRConfig: {fileID: 146891702}
+  m_StartupVRConfig: {fileID: 0}
   m_DefaultConfigFiles:
-  - {fileID: 4900000, guid: 81e17decf9de84d32b25e4434e530766, type: 3}
+  - {fileID: 4900000, guid: ffddebff2c3fb4ade91e33709fb42858, type: 3}
 --- !u!4 &516808816
 Transform:
   m_ObjectHideFlags: 0
@@ -1776,7 +1776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1661282067
 Transform:
   m_ObjectHideFlags: 0
