@@ -1,0 +1,14 @@
+# MinVR3 ConfigVal File (Assets/minvr-configvals-desktop 1.txt)
+# This file is only parsed when VRConfig_Desktop is used.
+# When parsed, settings in this file will override those with the same name in minvr-configvals-default.txt
+
+MENU_SIZE = 0.25
+
+UI_PANELS_IN_WORLD_SPACE = false
+UI_PANELS_SCALE = (1, 1, 1)
+
+WHITE_CANVAS_POSITION = (0, 0, 0)
+WHITE_CANVAS_ROTATIONANGLES = (0, 0, 0)
+
+BLUE_CANVAS_POSITION = (0, 0, 0)
+BLUE_CANVAS_ROTATIONANGLES = (0, 0, 0)

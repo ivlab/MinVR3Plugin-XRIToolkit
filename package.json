@@ -11,9 +11,14 @@
     "hideInEditor": "false",
     "samples": [
         {
-            "displayName": "MinVR3 with Unity XR Interaction Toolkit",
-            "description": "Two menus are displayed in the same scene, one created with MinVR3, the other with a Unity Canvas.  Shows how to combine MinVR interfaces with interfaces from Unity's XR Interaction Toolkit, which include support for interacting with Unity Canvases with XR Controllers.",
+            "displayName": "A Tale of Two Menus",
+            "description": "Two menus are displayed in the same scene, one created with MinVR3, the other with a Unity Canvas.  Demonstrates how to combine MinVR interfaces with interfaces from Unity's XR Interaction Toolkit, which include support for using XR Controllers to interact with Unity UI Canvases.",
             "path": "Samples~/TwoMenus"
+        },
+        {
+            "displayName": "Multi-Platform UI Canvas",
+            "description": "Demonstrates how to use MinVR's VRConfig system (VRConfig, VRConfigMask, and ConfigVals) to create an app that can run in a Native Desktop mode (i.e., mouse and keyboard input to control screen-overlay UI canvases) and a variety of VR Modes where the canvases switch to world-space rendering mode and become room-space 3D widgets controlled with a laser pointer.",
+            "path": "Samples~/MultiPlatformUICanvas"
         }
     ]
 }

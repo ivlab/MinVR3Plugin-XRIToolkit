@@ -1,0 +1,15 @@
+# MinVR3 ConfigVal File (Assets/minvr-configvals-basicvrsimulator 1.txt)
+# This file is only parsed when VRConfig_BasicVRSimulator is used.
+# When parsed, settings in this file will override those with the same name in minvr-configvals-default.txt
+
+MENU_SIZE = 0.25
+
+
+UI_PANELS_IN_WORLD_SPACE = true
+UI_PANELS_SCALE = (0.01, 0.01, 0.01)
+
+WHITE_CANVAS_POSITION = (0, 0, 2.5)
+WHITE_CANVAS_ROTATIONANGLES = (30, -30, 0)
+
+BLUE_CANVAS_POSITION = (0, 0, 2.5)
+BLUE_CANVAS_ROTATIONANGLES = (30, 30, 0)
