@@ -1,6 +1,6 @@
 {
     "name": "edu.umn.cs.ivlab.minvr3.xritoolkit",
-    "displayName": "MinVR3 XRI Toolkit",
+    "displayName": "MinVR3 XRI Toolkit Plugin",
     "description": "MinVR3 Plugin Unity Package that supports using MinVR3 together with Unity's XR Interaction Toolkit",
     "version": "0.1.0",
     "unity": "2020.3",
