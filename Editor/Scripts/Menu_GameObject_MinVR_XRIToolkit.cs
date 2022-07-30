@@ -22,6 +22,8 @@ namespace IVLab.MinVR3.XRIToolkit
         {
             MenuHelpers.CreateVREngineIfNeeded();
             MenuHelpers.CreateRoomSpaceOriginIfNeeded();
+            CreateXRInteractionManagerIfNeeded();
+
             var go = MenuHelpers.CreateAndPlaceGameObject("XR Ray Interactor (MinVR-Based)", command.context as GameObject,
                 new Type[] { typeof(MinVRBasedController), typeof(XRRayInteractor),
                 typeof(LineRenderer), typeof(XRInteractorLineVisual) });
@@ -49,6 +51,9 @@ namespace IVLab.MinVR3.XRIToolkit
         {
             MenuHelpers.CreateVREngineIfNeeded();
             MenuHelpers.CreateRoomSpaceOriginIfNeeded();
+            CreateXRInteractionManagerIfNeeded();
+
+
             var go = MenuHelpers.CreateAndPlaceGameObject("XR Direct Interactor (MinVR-Based)", command.context as GameObject,
                 new Type[] { typeof(MinVRBasedController), typeof(XRDirectInteractor),
                 typeof(SphereCollider) });
@@ -73,6 +78,8 @@ namespace IVLab.MinVR3.XRIToolkit
         {
             MenuHelpers.CreateVREngineIfNeeded();
             MenuHelpers.CreateRoomSpaceOriginIfNeeded();
+            CreateXRInteractionManagerIfNeeded();
+            CreateXRUIInputModuleIfNeeded();
 
             var go = MenuHelpers.CreateAndPlaceGameObject("UI Canvas", command.context as GameObject,
                 new Type[] { typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster),
@@ -80,22 +87,42 @@ namespace IVLab.MinVR3.XRIToolkit
 
             var canvas = go.GetComponent<Canvas>();
             canvas.renderMode = RenderMode.WorldSpace;
+        }
 
-            var inputModule = UnityEngine.Object.FindObjectOfType<XRUIInputModule>();
-            if (inputModule == null) {
-                var eventSystem = FindObjectOfType<EventSystem>();
-                if (eventSystem == null) {
-                    MenuHelpers.CreateAndPlaceGameObject("EventSystem", null, typeof(EventSystem), typeof(XRUIInputModule));
-                } else {
-                    var eventSystemGO = eventSystem.gameObject;
-                    var standaloneInputModule = eventSystemGO.GetComponent<StandaloneInputModule>();
-                    if (standaloneInputModule != null)
-                        Undo.DestroyObjectImmediate(standaloneInputModule);
-                    Undo.AddComponent<XRUIInputModule>(eventSystemGO);
-                }
+
+        public static void CreateXRInteractionManagerIfNeeded()
+        {
+            var xrInteractionMgr = FindObjectOfType<XRInteractionManager>();
+            if (xrInteractionMgr == null) {
+                MenuHelpers.CreateAndPlaceGameObject("XR Interaction Manager", null, typeof(XRInteractionManager));
             }
         }
 
+
+        public static void CreateXRUIInputModuleIfNeeded()
+        {
+            GameObject xruiInputModuleGO = null;
+            var xruiInputModule = FindObjectOfType<XRUIInputModule>();
+            if (xruiInputModule != null) {
+                xruiInputModuleGO = xruiInputModule.gameObject;
+            } else {
+                xruiInputModuleGO = MenuHelpers.CreateAndPlaceGameObject("XR UI Input Module", null, typeof(XRUIInputModule));
+            }
+
+            // XR UI Input Module has two special requirements:
+            // - an EventSystem must also exist
+            // - the StandAloneInputModule must not exist
+
+            var eventSystem = FindObjectOfType<EventSystem>();
+            if (eventSystem == null) {
+                xruiInputModuleGO.AddComponent<EventSystem>();
+            }
+
+            var standaloneInputModule = FindObjectOfType<StandaloneInputModule>();
+            if (standaloneInputModule != null) {
+                DestroyImmediate(standaloneInputModule);
+            }
+        }
 
 
     } // end class
