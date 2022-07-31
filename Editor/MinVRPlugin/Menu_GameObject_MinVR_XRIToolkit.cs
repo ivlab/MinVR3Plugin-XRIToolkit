@@ -15,7 +15,7 @@ using UnityEngine.EventSystems;
 namespace IVLab.MinVR3.XRIToolkit
 {
 
-    public class Menu_GameObject_MinVR : MonoBehaviour
+    public class Menu_GameObject_MinVR_XRIToolkit : MonoBehaviour
     {
         [MenuItem("GameObject/MinVR Interaction/Unity's XR Interaction Toolkit/XR Ray Interactor (MinVR-Based)", false, MenuHelpers.mvriItemPriority)]
         public static void CreateInteractionXRRayInteractor(MenuCommand command)

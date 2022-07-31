@@ -1,13 +1,11 @@
 {
     "name": "edu.umn.cs.ivlab.minvr3.xritoolkit",
-    "displayName": "MinVR3 XRI Toolkit Plugin",
-    "description": "MinVR3 Plugin Unity Package that supports using MinVR3 together with Unity's XR Interaction Toolkit",
+    "displayName": "MinVR3 Plugin: XR Interaction Toolkit",
+    "description": "Provides several utilities for using MinVR3 together with Unity's XR Interaction Toolkit, including a MinVR-Based XR Controller that can be used to create a XR Toolkit RayInteractor or DirectInteractor.  Also includes support for interacting with UI Canvases via a RayInteractor and handling input focus using MinVR Input Focus Token.",
     "version": "0.1.0",
     "unity": "2020.3",
-    "author": { "name": "IVLab", "email": "dfk@umn.edu", "url": "https://ivlab.cs.umn.edu" },
-    "documentationUrl": "https://pages.github.umn.edu/ivlab-cs/Template-UnityPackage",
-    "changelogUrl": "https://pages.github.umn.edu/ivlab-cs/MinVR3-XRIToolkit-UnityPackage/manual/changelog.html",
-    "licensesUrl": "https://pages.github.umn.edu/ivlab-cs/TMinVR3-XRIToolkit-UnityPackage/manual/license.html",
+    "author": { "name": "IVLab", "email": "ivlab-admin@umn.edu", "url": "https://ivlab.cs.umn.edu" },
+    "documentationUrl": "https://pages.github.umn.edu/ivlab-cs/MinVR3-UnityPackage",
     "hideInEditor": "false",
     "samples": [
         {
