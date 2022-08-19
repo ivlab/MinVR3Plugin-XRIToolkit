@@ -56,6 +56,12 @@ namespace IVLab.MinVR3.XRIToolkit
         /// <inheritdoc />
         protected override void UpdateTrackingInput(XRControllerState controllerState)
         {
+            // usually this can be done inside OnEnable, but Unity must initialize these XRControllers before
+            // the VREngine is initialized.
+            if ((enabled) && (!m_Listening)) {
+                StartListening();
+            }
+
             base.UpdateTrackingInput(controllerState);
             if (controllerState == null)
                 return;
@@ -87,6 +93,12 @@ namespace IVLab.MinVR3.XRIToolkit
         /// <inheritdoc />
         protected override void UpdateInput(XRControllerState controllerState)
         {
+            // usually this can be done inside OnEnable, but Unity must initialize these XRControllers before
+            // the VREngine is initialized.
+            if ((enabled) && (!m_Listening)) {
+                StartListening();
+            }
+
             base.UpdateInput(controllerState);
             if (controllerState == null)
                 return;
@@ -112,14 +124,19 @@ namespace IVLab.MinVR3.XRIToolkit
 
         public void StartListening()
         {
-            VREngine.Instance.eventManager.AddEventListener(this, VREventManager.DefaultListenerPriority - 1);
+            if ((VREngine.instance != null) && (VREngine.instance.eventManager != null)) {
+                VREngine.Instance.eventManager.AddEventListener(this, VREventManager.DefaultListenerPriority - 1);
+                m_Listening = true;
+            }
         }
 
         public void StopListening()
         {
             VREngine.Instance?.eventManager?.RemoveEventListener(this);
+            m_Listening = false;
         }
 
+        bool m_Listening = false;
         bool m_UIBtnDown = false;
         Vector3 m_Position = new Vector3();
         Quaternion m_Rotation = new Quaternion();
